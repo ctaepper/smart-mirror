@@ -1,0 +1,10 @@
+- var css = require('./weather.styles.css');
+div(class=css.wrapper)
+	img(ng-src='http://icons.wxug.com/i/c/i/{{data.current_observation.icon}}.gif')
+	div {{data.current_observation.temp_c}}°
+	div {{data.current_observation.wind_kph}} km/h
+	ul
+		li(ng-repeat='forecast in data.forecast.simpleforecast.forecastday')
+			span {{forecast.date.epoch | date: "EEEE"}}
+			img(ng-src='http://icons.wxug.com/i/c/i/{{forecast.icon}}.gif')
+			span {{forecast.low.celsius}}/{{forecast.high.celsius}}

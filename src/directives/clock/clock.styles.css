@@ -1,0 +1,11 @@
+.wrapper {
+  border: 1px solid green;
+}
+
+.date {
+  font-size: 14px;
+}
+
+.time {
+  font-size: 55px;
+}

@@ -1,0 +1,7 @@
+.wrapper {
+  border: 1px solid red;
+}
+
+.wrapper a {
+  display: none;
+}

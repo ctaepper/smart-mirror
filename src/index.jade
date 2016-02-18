@@ -1,0 +1,14 @@
+doctype html
+html(ng-app='smart-mirror', ng-strict-dii)
+	head
+		base(href=htmlWebpackPlugin.options.basePath)
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui')
+		meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+		title Smart Mirror
+	body
+		clock
+		joke
+		weather(city='Deggendorf', country='DE')
+
+		script(src='http://www.funny4you.at/webmasterprogramm/witzdestages.js.php')
