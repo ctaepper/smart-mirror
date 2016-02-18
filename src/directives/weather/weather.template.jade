@@ -5,6 +5,6 @@ div(class=css.wrapper)
 	div {{data.current_observation.wind_kph}} km/h
 	ul
 		li(ng-repeat='forecast in data.forecast.simpleforecast.forecastday')
-			span {{forecast.date.epoch | date: "EEEE"}}
+			span {{forecast.date.weekday}}
 			img(ng-src='http://icons.wxug.com/i/c/i/{{forecast.icon}}.gif')
 			span {{forecast.low.celsius}}/{{forecast.high.celsius}}
