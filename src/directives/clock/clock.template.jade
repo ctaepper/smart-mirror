@@ -1,0 +1,4 @@
+- var css = require('./clock.styles.css');
+div(class=css.wrapper)
+	div(class=css.date) {{timestamp | date: "EEEE, dd. MMMM"}}
+	div(class=css.time) {{timestamp | date: "HH:mm"}}
